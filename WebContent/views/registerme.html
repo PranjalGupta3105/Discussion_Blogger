@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register_Page</title>
+<style type="text/css">
+body        {
+                 background-image:url('views/watermark.jpg');
+				margin:0 0 0 0;
+	}
+div         {
+                 align:center;
+                 width:100%;
+                 height:10%;
+				 }
+.header          {
+                 background-color:#3B5998;
+				 }
+a           {
+                 text-decoration:none;
+				 }
+.upperline  {
+                 color:white;
+                 font-size:40pt;
+				 }
+
+.upperlines {
+                 font-size:25pt;
+                 text-align:right;
+                 color:white;
+				 }
+input       {
+                 width:100%;
+				 }
+</style>
+</head>
+<body>
+<div class="header">
+        <table border=0 width=100%>
+                   <tr>
+                   <td><a class="upperline" href=".././WebContent/index.html">Discussion Blog</a></td>
+                   <th><a class="upperlines" href="registerme.html">Sign up </a></th>
+                   <th><a class="upperlines" href="login.html">Log in</a></th>
+                   </tr>
+        </table>
+</div>
+<br><br><br><br>
+		<form action="../Signup" method="post">
+		<table border=0 align="center">
+					<tr>
+					<td>Username</td>
+					<th><input type="text"name="uname" placeholder="Enter your Username"></th>
+					</tr>
+					<tr>
+					<td>Email</td>
+					<th><input type="text" name="email" placeholder="Enter your E-mail Address"></th>
+					</tr>
+					<tr>
+					<td>Password</td>
+					<th><input type="password" name="pass" minlength="8" placeholder="Enter your Password (8*)"></th>
+					</tr>
+					<tr>
+					<td>Re-Password</td>
+					<th><input type="password" name="repass" minlength="8" placeholder="Re-Enter your Password (8*)"></th>
+					</tr>
+					<tr>
+					<td>Mobile Number</td>
+					<th><input type="text" name="mobno" maxlength="10" placeholder="Enter your Mobile Number"></th>
+					</tr>
+					<tr>
+					<td>Security Question</td>
+					<td><select name="seqques">
+					                  <option>Select Your Security Question</option>
+								      <option value="What is Your Nick Name?">What is Your Nick Name?</option>
+								      <option value="What is Your First Car No?">What is Your First Car No?</option>
+								      <option value="What is Pet Name?">What is Pet's Name?</option>
+								      <option value="What is your Favourite Book?">What is your Favourite Book?</option>
+								      <option value="Your Favourite Place?">Your Favourite Place?</option>
+								      </select>
+					</td>
+					</tr>
+					<tr>
+					<th>Answer</th>
+					<td><textarea name="answer" placeholder="Enter Your Security Answer" rows=5 cols=25></textarea><!-- <input type="text" name="answer" placeholder="Enter your Answer here">--></td>
+					</tr>
+					<tr>
+					<th colspan=2><input type="Submit" value="Submit my data"></th>
+					</tr>
+		</table>
+		</form>
+ </body>
+ <br><br><br><br><br><br><br><br><br><br>
+ <footer align=center>@copyright Spark 2016</footer>
+ <table><tr><td>Developed By:-</td><td align="center"><img src="pg.jpg" width=50 height=50><br>Pranjal Gupta</td>&nbsp;&nbsp;&nbsp;<td></td><td></td><td align="center"><img src="shiva.jpg" width=50 height=50><br>Pankaj Kumar Maurya</td>&nbsp;&nbsp;&nbsp;<td></td><td></td><td align="center"><img src="dk.jpg" width=50 height=50><br>Danish Ahmad Khan</td></tr></table>
+ </html>

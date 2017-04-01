@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Title Page</title>
+<script type="text/javascript">
+
+function abc() {
+
+    var ques = prompt("Please enter your Question");
+    if (ques != null) 
+	{
+    var quest=[];
+	quest.push(ques);
+	var quesd = document.getElementById("post");
+	var gap="<br>";
+	quesd.innerHTML+=gap;
+	quesd.innerHTML += quest;
+	
+	quesd.innerHTML+=gap;
+		var Nextl="<br><input type='Submit' onclick='xyz()' value='Post Your Answer Here'><br><br><hr><div><textarea name='feedans' rows=10 cols=50></textarea></div>";
+	<!--all's well uptill here -->
+		quesd.innerHTML +=Nextl;
+		quesd.innerHTML+="&nbsp;"
+
+<!--var postques = document.createTextNode(ans);-->
+<!--ans.appendChild(postques);-->
+var count=parseInt("0");
+	}
+	
+	}
+	function xyz()
+	{
+		
+	var ans=prompt("Your Answer Here");
+	
+	if(ans!=null)
+	{
+		var anst=[];
+		anst.push(ans);
+	feedans.innerHTML += anst;
+	//feedans.setAttribute(disable)
+	document.getElementById("post").reset();
+	document.getElementById("feedans").reset();
+	count++;
+	document.getElementId("inc").innerHTML=count;
+	}
+	
+	}
+	
+
+</script>
+<style type="text/css">
+a{
+text-decoration:none
+}
+.a{background-color:#3B5998;
+}
+div{
+
+align:center;
+width:100%;
+height:10%;
+}
+input{
+width:100%;
+}
+a{
+text-decoration:none;
+}
+.upperline{
+color:white;
+}
+body{
+margin:0 0 0 0;
+background-image:url('views/watermark.jpg');
+}
+.upperline{
+font-size:40pt;
+}
+.upperlines{
+font-size:25pt;
+text-align:right;
+color:white;
+}
+</style>
+</head>
+<body>
+
+<div class=a>
+<table border=0 width=100%>
+<tr>
+<td><a class="upperline" href=".././WebContent/index.html">Discussion Blog</a></td>
+<th><a class="upperlines" href="registerme.html">Sign up </a></th>
+<th><a class="upperlines" href="login.html">Log in</a></th>
+</tr>
+</table></div><br><br><br><br>
+</head>
+<body>
+<table border=0 align=center width=100% height=10%>
+<tr>
+<td><a href="C:\Users\Pranjal Gupta\workspace\Discussion_Blogger\WebContent\index.html">return Back</a>
+  <th align=right width=25%><input type="button" value="Post Your Question" onclick="abc()">
+</tr>
+</table>
+<div>
+<table border=0 align=center width=100%>
+<tr>
+<td>
+<table border=0 align="left" width=20% height=10%>
+<tr>
+<td>Views</td>
+<td><a href=" ">Answer</a></td>
+<td>Votes</td>
+</tr>
+<tr>
+<td><p id="inc"></p></td>
+<td><p id="inc"></p></td>
+</tr>
+<table border=0 align="left">
+	<tr>
+	<td>
+	<div id="post"></div>
+	</td>
+	</tr>
+
+<tr>
+<td>
+<br><div id="postans"></div>
+</td>
+</tr>
+</tr>
+<tr>
+<td></div></td>
+</tr></table></tr>
+
+
+</table>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,393 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Main</title>
+<style type="text/css">
+
+#menu {
+    width: 248px;
+    height: 35px;
+    font-size: 26px;
+    font-family:  sans-serif;
+    font-weight: normal;
+    background-color:blue;
+        border-radius: 10px;
+       }
+body
+{
+width:100%;
+background-color:black;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.6s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+
+    padding: 8px 8px 40px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #bbb;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/*signup and login*/
+
+input[type=text], input[type=password]
+ {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+/*icon */
+
+.icon-bar {
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+    overflow: auto;
+}
+
+.icon-bar a {
+    width: 10%;
+    padding: 12px 0;
+    float: left;
+    color: white;
+    font-size: 16px;
+
+}
+
+.icon-bar a:hover {
+    background-color: #999;
+    
+
+}
+
+.menubar {
+    background-color:blue ;
+height:10%;
+}
+
+input[type=search] {
+    width: 220px;
+    box-sizing: border-box;
+    border: 3px solid #222;
+    border-radius: 0px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('views/searchicon.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    
+}
+
+
+
+/*main conent images*/
+
+* {box-sizing:border-box}
+
+body {font-family: Verdana,sans-serif;margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ;
+}
+
+.active, .dot:hover {
+  background-color: orange;
+}
+
+
+
+
+/*footer*/
+
+#footer {
+   
+   bottom:16px;
+   height:200px;
+   text-align: center;
+   width:100%;
+   background-color:#E8A733;
+}
+.hyper
+{
+color:cyan;
+}
+a {text-decoration:none;
+ margin-right:15px;}
+.fhead
+{
+Background-color:#ABCEA4;
+}
+</style>
+</head>
+
+
+<body>
+        
+<div id="mySidenav" class="sidenav" style="color:white">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="menu" align="center">
+      <br><br> <a href="views/login.html">LOGIN</a>       
+ <a href="views/registerme.html">SIGN UP</a>
+    </div>
+</div>
+
+<!--topview-->
+
+<div class="icon-bar">
+
+<a class="menubar" style="font-size:25px;cursor:pointer;color:white" onclick="openNav()"><b>&#9776;</b></a> 
+<a href="#"> Home</a>  
+<a href="#"> Discussion</a>
+<a href="views/login.html"> Log-In</a><a href="views/registerme.html"> Sign-Up</a>
+<form>
+<input type="search" name="search" placeholder="Search..">
+</form>
+
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<!--main content-->
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="views/discussion.jpg" style="width:100%" height="50%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="views/Discussion-Forums-blog2.jpg" style="width:100%" height="50%">
+
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="views/df.png" style="width:100%" height="50%">
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"><b> < </b></a>
+<a class="next" onclick="plusSlides(1)"><b> > </b></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+    
+}
+</script> 
+
+
+
+
+
+
+<!--login page-->
+
+<!--footer-->
+<div id="footer" >
+
+                    
+
+
+
+<!--footer technology-->
+  <table>
+  <tr><th ><br>Technology</th>
+  </tr>
+
+  <tr>
+<td> <ul>
+ <li><a href="http://www.stackoverflow.com">Stack Overflow</a></li>
+                       
+ <li><a href="http://webapps.stackexchange.com/">Web Applications</a></li>
+                        
+  <li><a href="http://gamedev.stackexchange.com/">Game Development</a></li>
+                      
+  </td>
+<td>
+ <li><a href="http://programmers.stackexchange.com/">Programmers</a></li>
+                       
+ <li><a href="http://wordpress.stackexchange.com/">WordPress Development</a></li>
+                      
+ <li><a href="http://security.stackexchange.com/">Information Security</a></li>
+                            </ol></td>
+<td>
+ <li><a href="http://dba.stackexchange.com/">Database Administrators</a></li>
+ <li><a href="http://ux.stackexchange.com/">User Experience</a></li>
+ <li><a href="http://mathematica.stackexchange.com/">Mathematical</a></li>
+                         
+ </td>
+<td>
+ <li><a href="http://codereview.stackexchange.com/">Code Review</a></li>
+ 
+ <li><a href="http://codegolf.stackexchange.com/">Programming Puzzles &amp; Code Golf</a></li>
+                    
+ 
+                </ul>
+            </td>
+
+</tr>
+</table>
+</div> 
+<div class="fhead"> 
+<table><tr><td>Developed By:-</td><td align="center"><img src="views/pg.jpg" width=50 height=50><br><b>Pranjal Gupta</b></td>&nbsp;&nbsp;&nbsp;<td></td><td></td><td align="center"><img src="views/shiva.jpg" width=50 height=50><br><b>Pankaj Kumar Maurya</b></td>&nbsp;&nbsp;&nbsp;<td></td><td></td><td align="center"><img src="views/dk.jpg" width=50 height=50><br><b>Danish Ahmad Khan</b></td></tr></table>
+ </div> 
+</body>
+</html>
+                    
+            
+            
